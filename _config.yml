@@ -53,6 +53,7 @@ sent_message_url: "/contact/message-sent/"
 
 
 # Build settings
+remote_theme: "https://github.com/thiagorossener/jekflix-template"
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
@@ -104,7 +105,6 @@ plugins:
   - jekyll-readme-index
   - jekyll-default-layout
   - jekyll-titles-from-headings
-  - jekyll-remote-theme
 
 # Exclude my node related stuff
 exclude: [
