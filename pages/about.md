@@ -9,6 +9,8 @@ permalink: /about/
 
 <img class="img-rounded" src="/assets/img/uploads/profile.png" alt="bgx4k3p" width="200">
 
+<img class="img-rounded" src=<script type="application/ld+json">{{"/assets/img/uploads/profile.png" | prepend: site.baseurl | prepend: site.url }}</script> alt="bgx4k3p" width="200">
+
 # bgx4k3p
 
 An avid learner and tech enthusiast with a passion for building drones, automation and hacking CTFs. Always eager to expand knowledge and sharing insights with others.

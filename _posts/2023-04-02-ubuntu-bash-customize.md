@@ -65,4 +65,4 @@ chown ansible:ansible /home/ansible/.inputrc
 
 chown bgx4k3p:bgx4k3p /home/bgx4k3p/.bashrc
 chown bgx4k3p:bgx4k3p /home/bgx4k3p/.inputrc
-``
+```
