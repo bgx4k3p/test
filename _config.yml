@@ -22,7 +22,11 @@
 # Site Settings
 name: bgx4k3p
 title: bgx4k3p | Every day is a chance to learn!
-description: bgx4k3p
+description: Blog
+baseurl: "/test"
+url: "https://bgx4k3p.github.io"
+
+# Site Layout
 show_hero: true
 menu:
   - title: Home
@@ -35,6 +39,7 @@ menu:
     url: /projects
   - title: Feed
     url: /feed.xml
+
 tags:
   - blog
   - template
@@ -57,7 +62,6 @@ email: bgx4k3p@gmail.com
 # instagram_username: instagram_username
 # medium_username: medium_username
 
-
 # Posts Settings
 show_time_bar: false
 show_modal_on_exit: false
@@ -65,8 +69,6 @@ show_modal_on_finish_post: true
 two_columns_layout: true
 
 # Advanced Settings
-baseurl                 : "/test"
-url                     : "https://bgx4k3p.github.io"
 google_analytics: "UA-XXXXXXXX-X"
 language: "en"
 categories_folder: category
