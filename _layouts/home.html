@@ -20,7 +20,7 @@ layout: main
         {% assign featured = posts.first %}
         <section class="hero" style="background-image: url({{ featured.image | prepend: site.baseurl }})">
             <div class="pixels"></div>
-            <!-- <div class="gradient"></div>-->
+            <div class="gradient"></div>
             <div class="content">
                 <time datetime="{{ featured.date | date_to_xmlschema }}" class="date">
                     {% if site.date_format == nil %}
