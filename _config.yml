@@ -44,7 +44,7 @@ two_columns_layout: true
 
 
 # Advanced Settings
-baseurl                 : "/test" # the subpath of your site, e.g. /blog
+baseurl                 : "/test"
 url                     : "https://bgx4k3p.github.io"
 google_analytics: "UA-XXXXXXXX-X"
 language: "en"
