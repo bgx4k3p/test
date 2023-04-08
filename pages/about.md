@@ -7,9 +7,7 @@ description: About me
 permalink: /about/
 ---
 
-<img class="img-rounded" src="/assets/img/uploads/profile.png" alt="bgx4k3p" width="200">
-
-<img class="img-rounded" src=<script type="application/ld+json">{{"/assets/img/uploads/profile.png" | prepend: site.baseurl | prepend: site.url }}</script> alt="bgx4k3p" width="200">
+<img class="img-rounded" src="/assets/img/profile.png" alt="bgx4k3p" width="200">
 
 # bgx4k3p
 
