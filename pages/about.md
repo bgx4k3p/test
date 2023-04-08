@@ -7,7 +7,7 @@ description: About me
 permalink: /about/
 ---
 
-<img class="img-rounded" src="../assets/img/profile.png" alt="bgx4k3p" width="200">
+<img class="img-rounded" src="https://bgx4k3p.github.io/test/assets/img/profile.png" alt="bgx4k3p" width="200">
 
 # bgx4k3p
 
