@@ -46,7 +46,7 @@
                                     {% if post.optimized_image %}
                                         <img src="{{ post.optimized_image }}">
                                     {% elsif post.image %}
-                                        <img src="{{ post.image }}">
+                                        <img src="{{ post.image | prepend: site.baseurl}}">
                                     {% else %}
                                         <img src="/assets/img/off.jpg">
                                     {% endif %}

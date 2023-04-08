@@ -16,8 +16,6 @@ tags:
 author: bgx4k3p
 ---
 
-Works on post, but not on home page: image: ../assets/img/awx-large.png
-
 ## 1. Prerequisites
 
 - Ubuntu Server with MicroK8s cluster: <https://bgx4k3p.github.io/blog/linux/2021/12/24/kubernetes-microk8s-ubuntu.html>
