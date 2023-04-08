@@ -1,30 +1,5 @@
-<!--
 <section class="share">
-    <h3>{{ site.translations.text.share | default: "Share" }}</h3>
-    
-    <a aria-label="{{ site.translations.button.share_on_twitter | default: 'Share on Twitter' }}" href="https://twitter.com/intent/tweet?text=&quot;{{ page.description }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={{ page.tags | join: ',' }}"
-    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="{{ site.translations.button.share_on_twitter | default: 'Share on Twitter' }}">
-        <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
-    </a>
-    
-    <a aria-label="{{ site.translations.button.share_on_twitter | default: 'Share on Twitter' }}"
-        href="https://twitter.com/intent/tweet?text=&quot;{{ page.description }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={{ page.tags | join: ',' }}"
-        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"
-        title="{{ site.translations.button.share_on_twitter | default: 'Share on Twitter' }}">
-        <svg class="icon icon-twitter">
-            <use xlink:href="#icon-twitter"></use>
-        </svg>
-    </a>
-
-    <a aria-label="{{ site.translations.button.share_on_facebook | default: 'Share on Facebook' }}" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
-    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="{{ site.translations.button.share_on_facebook | default: 'Share on Facebook' }}">
-        <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
-    </a>
-</section>
--->
-
-<section class="share">
-    <h3>{{ site.translations.text.share | default: "Share Post" }}
+    <h3>{{ site.translations.text.share | default: "Share Post" }} </h3>
 
     <a href="https://twitter.com/intent/tweet?{% if site.twitter.username %}via={{ site.twitter.username | url_encode }}&{% endif %}text={{ page.title | url_encode }}%20{{ page.url | absolute_url | url_encode }}"
         class="btn btn--twitter"
@@ -32,7 +7,6 @@
         title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Twitter">
             <svg><use xlink:href="#icon-twitter"></use></svg>
     </a>
-
     <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}"
         class="btn btn--linkedin"
         onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
@@ -45,5 +19,4 @@
         title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook">
             <svg><use xlink:href="#icon-facebook"></use></svg>
     </a>
-    </h3>
 </section>
