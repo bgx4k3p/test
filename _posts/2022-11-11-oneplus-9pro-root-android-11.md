@@ -15,8 +15,6 @@ tags:
 author: mranderson
 ---
 
-How to Root OnePlus 9 Pro device
-
 ## Step 1. Install Android 11 Global LE15AA
 
 The latest Android 11 Global ROM should be LE15AA_11.2.10.10
