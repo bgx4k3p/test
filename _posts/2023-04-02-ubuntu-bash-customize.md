@@ -1,5 +1,5 @@
 ---
-date: 2022-11-11 12:26:40
+date: 2022-11-11 12:26:41
 layout: post
 title: Customize BASH shell
 subtitle: Add color prompt, commands autocomplete and aliases for BASH shell
