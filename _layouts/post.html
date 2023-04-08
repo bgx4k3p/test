@@ -44,9 +44,9 @@
                             <li>
                                 <a href="{{ post.url | prepend: site.baseurl }}">
                                     {% if post.optimized_image %}
-                                        <img src="{{ post.optimized_image | prepend: site.baseurl}}">
+                                        <img src="{{ post.optimized_image }}">
                                     {% elsif post.image %}
-                                        <img src="{{ post.image | prepend: site.baseurl}}">
+                                        <img src="{{ post.image }}">
                                     {% else %}
                                         <img src="/assets/img/off.jpg">
                                     {% endif %}
@@ -78,9 +78,10 @@
 
         {% include subscription.html %}
         {% include share.html %}
-        
-        <!-- 
         {% include author.html %}
+        {% include comments.html %}
+        {% include footer.html %}
+
         {% assign author = site.authors | where: "name", post.author | first %}
 
         {% assign author_urls = '' %}
@@ -102,9 +103,6 @@
         {% if author.linkedin_username %}
             {% assign author_urls = author_urls | append: '"https://www.linkedin.com/in/' | append: author.linkedin_username | append: '",' %}
         {% endif %}
-        -->
-        {% include footer.html %}
-   
         {% if page.math %}
         <script>
             MathJax = {
