@@ -39,7 +39,6 @@ tags:
   - jekyll
   - theme
 
-email: youremail@test.com
 # See: https://disqus.com/
 disqus_username: disqus_username
 # Contact Form Setting
@@ -50,6 +49,7 @@ formspree_form_id: formspree_form_id
 # Social Media Settings
 github_username: bgx4k3p
 linkedin_username: chukalov
+email: bgx4k3p@gmail.com
 # facebook_username: facebook_username
 # twitter_username: bgx4k3p
 # instagram_username: instagram_username

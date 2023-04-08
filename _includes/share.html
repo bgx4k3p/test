@@ -24,7 +24,7 @@
 -->
 
 <section class="share">
-    <h3>{{ site.translations.text.share | default: "Share" }}</h3>
+    <h3>{{ site.translations.text.share | default: "Share Post" }}
 
     <a href="https://twitter.com/intent/tweet?{% if site.twitter.username %}via={{ site.twitter.username | url_encode }}&{% endif %}text={{ page.title | url_encode }}%20{{ page.url | absolute_url | url_encode }}"
         class="btn btn--twitter"
@@ -45,5 +45,5 @@
         title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook">
             <svg><use xlink:href="#icon-facebook"></use></svg>
     </a>
-
+    </h3>
 </section>
