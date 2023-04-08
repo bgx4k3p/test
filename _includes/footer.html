@@ -1,4 +1,5 @@
 <footer>
+  <!-- 
     <p>
       {% if site.github_username %}
         <a href="https://github.com/{{ site.github_username }}" title="Github">
@@ -31,11 +32,13 @@
         </a>
       {% endif %}
     </p>
+    -->
     <p>
       <a href="https://github.com/thiagorossener/jekflix-template" target="_blank" class="creator">Powered by Jeckyll & Jeckflix</a>
     </p>
 </footer>
 
+<!-- 
 {% assign social_urls = '' %}
 {% if site.github_username %}
     {% assign social_urls = social_urls | append: '"https://github.com/' | append: site.github_username | append: '",' %}
@@ -56,6 +59,8 @@
     {% assign social_urls = social_urls | append: '"https://www.linkedin.com/in/' | append: site.linkedin_username | append: '",' %}
 {% endif %}
 
+-->
+
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -74,9 +79,6 @@
   ]
 }
 </script>
-
-<!-- Include the script that allows Netlify CMS login -->
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 <!-- Include the website scripts -->
 <script src="{{ '/assets/js/scripts.min.js' | prepend: site.baseurl }}"></script>
