@@ -46,7 +46,7 @@
                                     {% if post.remote_image %}
                                         <img src="{{ post.remote_image }}">
                                     {% elsif post.image %}
-                                        <img src="{{ post.image }}">
+                                        <img src="{{ post.image | prepend: site.baseurl }}">
                                     {% else %}
                                         <img src="/assets/img/off.jpg">
                                     {% endif %}
