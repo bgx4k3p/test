@@ -78,10 +78,12 @@
 
         {% include subscription.html %}
         {% include share.html %}
-        {% include author.html %}
-        {% include comments.html %}
         {% include footer.html %}
+        
+        <!-- 
+        {% include comments.html %}
 
+        {% include author.html %}
         {% assign author = site.authors | where: "name", post.author | first %}
 
         {% assign author_urls = '' %}
@@ -103,6 +105,8 @@
         {% if author.linkedin_username %}
             {% assign author_urls = author_urls | append: '"https://www.linkedin.com/in/' | append: author.linkedin_username | append: '",' %}
         {% endif %}
+        -->
+        
         {% if page.math %}
         <script>
             MathJax = {
