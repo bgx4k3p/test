@@ -1,10 +1,16 @@
 ---
+date: 2021-09-27 12:26
+layout: post
 title: Install ESXi updates from command line
-categories: how-to
-tags: how-to esxi
+subtitle: Quick notes
+description: How to install ESXi updates from command line
+image: https://bgx4k3p.github.io/test/assets/img/esxi.jpg
+category: linux
+tags: vmware esxi
+author: bgx4k3p
+paginate: true
 ---
 
-How to install ESXi updates from command line
 
 ## 1. Put the ESXi server in Maintenance mode
 
@@ -14,7 +20,6 @@ You can install the updates without Maintenance mode, but it's better to be on t
 esxcli system maintenanceMode set --enable=true
 esxcli system maintenanceMode get 
 ```
-
 
 ## 2. Allow outbound HTTP requests  
 
@@ -44,9 +49,10 @@ ESXi-7.0U2c-18426014-standard     VMware, Inc.  PartnerSupported  2021-08-24T00:
 ESXi-7.0U2d-18538813-standard     VMware, Inc.  PartnerSupported  2021-09-14T00:00:00  2021-09-14T00:00:00
 ```
 
-## 4. Dry Run 
+## 4. Dry Run
 
 Select the latest one based on date and do dry run (optional)
+
 ```bash
 esxcli software profile update -d https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml -p ESXi-7.0U2d-18538813-standard --dry-run
 ```
@@ -57,19 +63,18 @@ esxcli software profile update -d https://hostupdate.vmware.com/software/VUM/PRO
 esxcli software profile update -d https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml -p ESXi-7.0U2d-18538813-standard
 ```
 
-
 ## 6. Disable outbound HTTP requests  
 
 ```bash
 esxcli network firewall ruleset set -e false -r httpClient
 ```
 
-## 7. Reboot 
-
+## 7. Reboot
 
 ## 8. Troubleshooting
 
 Sometimes this error occurs during update and vmware-tools
+
 ```bash
 # Common error
 [InstallationError]
@@ -83,7 +88,8 @@ esxcli software profile update -d https://hostupdate.vmware.com/software/VUM/PRO
 esxcli software vib install -v https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/esx/vmw/vib20/tools-light/VMware_locker_tools-light_11.0.5.15389592-15999342.vib
 
 ```
-https://my.vmware.com/group/vmware/downloads/details?downloadGroup=VMTOOLS1120-OSS&productId=1073
+
+<https://my.vmware.com/group/vmware/downloads/details?downloadGroup=VMTOOLS1120-OSS&productId=1073>
 
 Another issue is you have an older CPU, just add the extra flag to disable the warning
 
