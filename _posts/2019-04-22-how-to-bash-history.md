@@ -1,10 +1,16 @@
 ---
+date: 2019-04-22 12:26
+layout: post
 title: Dedup BASH History
-categories: linux
-tags: linux bash macos how-to
+subtitle: Quick notes
+description: One-liner to dedup Bash History.
+image: https://bgx4k3p.github.io/test/assets/img/bash.jpg
+category: linux
+tags: linux ubuntu bash
+author: bgx4k3p
+paginate: true
 ---
 
-Script to dedup Bash History
 
 ```bash
 # Remove duplicates
