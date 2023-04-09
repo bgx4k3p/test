@@ -1,7 +1,7 @@
 ---
 date: 2023-04-08 12:24
 layout: post
-title: Upgrade AWX on MicroK8s cluster on Ubuntu Server
+title: Upgrade AWX with MicroK8s cluster on Ubuntu Server
 subtitle: How-to
 description: Step by step instructions to upgrade AWX with MicroK8s cluster on Ubuntu Server, using Helm chart.
 image: https://bgx4k3p.github.io/test/assets/img/awx-large.png
