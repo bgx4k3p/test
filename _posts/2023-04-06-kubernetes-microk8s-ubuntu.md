@@ -1,10 +1,15 @@
 ---
-title: "Setup MicroK8s cluster on Ubuntu 22.04"
-categories: linux
-tags: linux how-to kubernetes ubuntu microk8s
+date: 2023-04-06 12:22
+layout: post
+title: Setup MicroK8s cluster on Ubuntu Server
+subtitle: How-to
+description: Step by step instructions to set MicroK8s cluster on Ubuntu 22.04.
+image: https://bgx4k3p.github.io/test/assets/img/awx-large.png
+category: linux
+tags: linux awx ansible kubernetes helm microk8s
+author: bgx4k3p
+paginate: true
 ---
-
-How to setup MicroK8s cluster on Ubuntu 22.04
 
 ## 1. Install MicroK8s and Kubectl
 
