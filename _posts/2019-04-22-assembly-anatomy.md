@@ -1,10 +1,16 @@
 ---
-title: Anatomy of an HLA Program
-categories: assembly
-tags: assembly programming
+date: 2021-09-27 12:26
+layout: post
+title: HLA Program template
+subtitle: Quick notes
+description: Anatomy of an HLA Program
+image: https://bgx4k3p.github.io/test/assets/img/assembly.png
+category: linux
+tags: assembly
+author: bgx4k3p
+paginate: true
 ---
 
-**HLA Program template**
 
 ```bash
 program pgmID ;
