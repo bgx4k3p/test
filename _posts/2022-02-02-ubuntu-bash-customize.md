@@ -1,15 +1,12 @@
 ---
-date: 2022-11-11 12:26:40
+date: 2022-02-02 12:26:40
 layout: post
 title: Customize BASH shell
 subtitle: Add color prompt, commands autocomplete and aliases for BASH shell
 description: Add color prompt, commands autocomplete and aliases for BASH shell on Ubuntu. This is a time saver if you tend to build and re-build your servers all the time, like in a home lab.
 image: https://bgx4k3p.github.io/blog/assets/img/code-large.jpg
 category: tutorial
-tags:
-  - linux
-  - ubuntu
-  - bash
+tags: linux ubuntu bash
 author: bgx4k3p
 paginate: true
 ---

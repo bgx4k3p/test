@@ -6,12 +6,9 @@ subtitle: Quick notes
 description: Set up terminal credentials GitHub.
 image: https://bgx4k3p.github.io/blog/assets/img/code-large.jpg
 category: tutorial
-tags:
-  - git
-  - bash
+tags: git bash vscode
 author: bgx4k3p
 paginate: true
-
 ---
 
 ## Add Email and Username
