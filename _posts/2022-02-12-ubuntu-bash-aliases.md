@@ -1,10 +1,15 @@
 ---
-title: "Useful BASH Aliases for Ubuntu"
-categories: linux
-tags: linux ubuntu bash
+date: 2022-02-12 12:26
+layout: post
+title: Useful BASH Aliases for Ubuntu
+subtitle: Quick notes
+description: How to add useful BASH aliases for root user on Ubuntu.
+image: https://bgx4k3p.github.io/test/assets/img/bash.jpg
+category: linux
+tags: git bash ubuntu
+author: bgx4k3p
+paginate: true
 ---
-
-How to add useful BASH aliases for root user on Ubuntu
 
 ## 1. Switch to root user
 

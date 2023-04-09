@@ -1,11 +1,11 @@
 ---
-date: 2022-11-11 12:26:40
+date: 2022-11-11 12:26
 layout: post
 title: Configure GitHub creds
 subtitle: Quick notes
 description: Set up terminal credentials GitHub.
-image: https://bgx4k3p.github.io/blog/assets/img/code-large.jpg
-category: tutorial
+image: https://bgx4k3p.github.io/test/assets/img/bash.jpg
+category: linux
 tags: git bash vscode
 author: bgx4k3p
 paginate: true

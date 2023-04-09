@@ -4,13 +4,11 @@ layout: post
 title: OnePlus 9 Pro - Convert T-Mobile branded device to Global
 subtitle: How-to
 description: Step by step instructions for converting T-Mobile OnePlus 9 Pro branded device to Global. It is easier for rooting and use for penetration testing or other purposes.
-image: https://bgx4k3p.github.io/test/assets/img/code-large.jpg
+image: https://bgx4k3p.github.io/test/assets/img/oneplus.jpg
 category: android
 tags: android root oneplus-9 unlock
 author: bgx4k3p
 ---
-
-
 
 **OnePlus 9 Pro Device models**
 
@@ -21,6 +19,7 @@ T-Mobile branded OnePlus 9 Pro (LE2127) devices have known issues with Modem and
 - LE2127 - T-Mobile : ACB
 
 **Prerequisites:**
+
 - You must be SIM unlocked. This conversion will not SIM unlock you.
 - Verify "Enable OEM unlocking" is not greyed out in Developer Options.
 - Download the required signed ROMs from the link the bottom

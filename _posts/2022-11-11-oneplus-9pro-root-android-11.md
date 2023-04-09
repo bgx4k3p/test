@@ -1,10 +1,10 @@
 ---
-date: 2022-11-11 12:26:40
+date: 2022-11-11 12:26
 layout: post
 title: OnePlus 9 Pro - Root Android
 subtitle: How to Root OnePlus 9 Pro device.
 description: Step by step instructions for rooting OnePlus 9 Pro device for penetration testing or other purposes.
-image: https://bgx4k3p.github.io/test/assets/img/code-large.jpg
+image: https://bgx4k3p.github.io/test/assets/img/oneplus.jpg
 category: android
 tags: android root oneplus-9 unlock
 author: bgx4k3p
