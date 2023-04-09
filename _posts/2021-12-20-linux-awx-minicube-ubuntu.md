@@ -1,12 +1,18 @@
 ---
-title: Install AWX with Minicube Cluster on Ubuntu 21.04
-categories: linux
-tags: linux minicube cluster kubernetes ubuntu 
+date: 2021-12-20 12:24
+layout: post
+title: Install AWX with Minikube on Ubuntu Server
+subtitle: How-to
+description: How to setup Minicube cluster on on Ubuntu 21.04.
+image: https://bgx4k3p.github.io/test/assets/img/awx-large.png
+category: linux
+tags: linux awx ansible kubernetes minicube
+author: bgx4k3p
+paginate: true
 ---
 
-How to setup Minicube cluster on on Ubuntu 21.04
 
-## 1. Install Minicube 
+## 1. Install Minicube
 
 ```bash
 # Install Minikube dependencies
@@ -23,7 +29,7 @@ sudo chmod +x /usr/local/bin/minikube
 minikube version
 ```
 
-## 2. Install Docker 
+## 2. Install Docker
 
 ```bash
 # Install Docker dependencies
@@ -40,7 +46,7 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 docker -v
 ```
 
-## 3. Setup Docker permissions 
+## 3. Setup Docker permissions
 
 ```bash
 # Create new group and add the current user to it
@@ -49,7 +55,7 @@ sudo usermod -aG docker $USER #ansible
 newgrp docker
 ```
 
-## 4. Install Kubectl 
+## 4. Install Kubectl
 
 ```bash
 sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
@@ -59,7 +65,7 @@ sudo apt-get install -y kubectl
 kubectl version
 ```
 
-## 5. Setup Cluster 
+## 5. Setup Cluster
 
 Make sure to have enough RAM! AWX won't install properly if less than 5Gb.
 
@@ -78,7 +84,7 @@ kubectl get nodes
 kubectl get pods -A
 ```
 
-## 6. Install AWX Operator 
+## 6. Install AWX Operator
 
 ```bash
 # Get latest release
@@ -97,7 +103,7 @@ kubectl get pods -n $NAMESPACE
 
 ```
 
-## 7. Install AWX 
+## 7. Install AWX
 
 ```bash
 # Change context to the dedicated namespace
@@ -123,6 +129,7 @@ kubectl get svc -l "app.kubernetes.io/managed-by=awx-operator"
 ```
 
 Should look like this:
+
 ```bash
 ansible@kube:~$ kubectl get pods -l "app.kubernetes.io/managed-by=awx-operator"
 NAME                   READY   STATUS              RESTARTS   AGE
@@ -131,8 +138,7 @@ awx-postgres-0         1/1     Running             0          55s
 
 ```
 
-Once all 6 pods are running, we should now be able to access AWX. 
-
+Once all 6 pods are running, we should now be able to access AWX.
 
 ## 8. Get the Admin password
 
@@ -141,7 +147,6 @@ Need to get the admin password first
 ```bash
 echo Username: admin$'\n'Password: `kubectl get secret awx-admin-password -o jsonpath="{.data.password}" | base64 --decode`
 ```
-
 
 ## 9. Setup Proxy Redirect
 
@@ -168,9 +173,3 @@ kubectl port-forward svc/awx-service --address 0.0.0.0 31850:80 &> /dev/null &
 ```
 
 AWX should be accessible on port 80 from another machine now.
-
-
-
-
-
-
