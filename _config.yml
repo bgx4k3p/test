@@ -25,6 +25,10 @@ title: bgx4k3p | Every day is a chance to learn!
 description: Blog
 baseurl: "/test"
 url: "https://bgx4k3p.github.io"
+locale: "en-US"
+timezone: America/New_York
+search: true
+
 
 # Site Layout
 show_hero: true
