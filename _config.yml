@@ -73,7 +73,8 @@ show_modal_on_finish_post: true
 two_columns_layout: true
 
 # Advanced Settings
-google_analytics: "UA-XXXXXXXX-X"
+#google_analytics: "UA-XXXXXXXX-X"
+google_analytics: "G-HP7XX1PBQ9"
 language: "en"
 categories_folder: category
 sent_message_url: "/contact/message-sent/"
