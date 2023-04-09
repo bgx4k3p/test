@@ -2,15 +2,15 @@
 date: 2022-11-11 12:25
 layout: post
 title: OnePlus 9 Pro - Convert T-Mobile branded device to Global
-subtitle: How to Root OnePlus 9 Pro device.
-description: Step by step instructions for rooting OnePlus 9 Pro device for penetration testing or other purposes.
+subtitle: How-to
+description: Step by step instructions for converting T-Mobile OnePlus 9 Pro branded device to Global. It is easier for rooting and use for penetration testing or other purposes.
 image: https://bgx4k3p.github.io/test/assets/img/code-large.jpg
 category: android
-tags: android root oneplus-9 unlock bootloader
+tags: android root oneplus-9 unlock
 author: bgx4k3p
 ---
 
-How to convert T-Mobile OnePlus 9 Pro branded device to Global
+
 
 **OnePlus 9 Pro Device models**
 
